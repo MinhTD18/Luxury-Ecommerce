@@ -79,6 +79,38 @@ def product(request):
     return render(request, 'store/03_product.html')
 
 
+def handle404(request):
+    return render(request, 'store/404.html')
+
+
+def contact(request):
+    return render(request, 'store/14_contact.html')
+
+
+def blog(request):
+    return render(request, 'store/13_single-blog-post.html')
+
+
+def short_code(request):
+    return render(request, 'store/shortcodes.html')
+
+
+def about(request):
+    return render(request, 'store/about.html')
+
+
+def look_book(request):
+    return render(request, 'store/look-book.html')
+
+
+def categories(request):
+    return render(request, 'store/02_categories.html')
+
+
+def shopping_cart(request):
+    return render(request, 'store/06_shopping_cart.html')
+
+
 class CustomPasswordResetView(PasswordResetView):
     subject_template_name = 'store/registration/password_reset_subject.txt'
     email_template_name = 'store/registration/password_reset_email.html'
