@@ -54,6 +54,11 @@ def register(request):
     return render(request, 'store/05_register.html')
 
 
+def logout(request):
+    auth.logout(request)
+    return redirect('main')
+
+
 class CustomPasswordResetView(PasswordResetView):
     subject_template_name = 'store/registration/password_reset_subject.txt'
     email_template_name = 'store/registration/password_reset_email.html'
