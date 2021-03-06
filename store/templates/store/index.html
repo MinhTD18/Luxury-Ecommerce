@@ -26,22 +26,22 @@ Purchase: https://themeforest.net/user/webstrot  -->
     <meta name="author" content="">
 	<title>Luxury Shop Ecommerce HTML Template</title>
 
-	<link rel="shortcut icon" href="{% static 'assets/img/favicon.png' %}">
-    <link href="../../static/assets/libraries/bootstrap/bootstrap.min.css" rel="stylesheet"/>
-	<link rel="stylesheet" href="../../static/assets/libraries/fuelux/jquery-ui.min.css">
-    <linK href="../../static/assets/libraries/owl-carousel/owl.carousel.css" rel="stylesheet"></linK> <!-- Core Owl Carousel CSS File  *	v1.3.3 -->
-    <linK href="../../static/assets/libraries/owl-carousel/owl.theme.css" rel="stylesheet"></linK> <!-- Core Owl Carousel CSS Theme  File  *	v1.3.3 -->
-	<link href="../../static/assets/libraries/fonts/font-awesome.min.css" rel="stylesheet"/>
-	<link href="../../static/assets/libraries/animate/animate.min.css" rel="stylesheet"/>
-	<link href="../../static/assets/libraries/flexslider/flexslider.css" rel="stylesheet" /> <!-- flexslider -->
-	<link href="../../static/assets/libraries/magnific-popup.css" rel="stylesheet"/> <!-- Light Box -->
-    <link href="../../static/assets/css/components.css" rel="stylesheet"/>
-	<link href="../../static/assets/css/style.css" rel="stylesheet"/>
-    <link href="../../static/assets/css/media.css" rel="stylesheet"/>
+	<link rel="shortcut icon" href="{% static 'assets/../../static/assets/img/favicon.png' %}">
+    <link href="../../static/assets/../../static/assets/libraries/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="../../static/assets/../../static/assets/libraries/fuelux/jquery-ui.min.css">
+    <linK href="../../static/assets/../../static/assets/libraries/owl-carousel/owl.carousel.css" rel="stylesheet"></linK> <!-- Core Owl Carousel CSS File  *	v1.3.3 -->
+    <linK href="../../static/assets/../../static/assets/libraries/owl-carousel/owl.theme.css" rel="stylesheet"></linK> <!-- Core Owl Carousel CSS Theme  File  *	v1.3.3 -->
+	<link href="../../static/assets/../../static/assets/libraries/fonts/font-awesome.min.css" rel="stylesheet"/>
+	<link href="../../static/assets/../../static/assets/libraries/animate/animate.min.css" rel="stylesheet"/>
+	<link href="../../static/assets/../../static/assets/libraries/flexslider/flexslider.css" rel="stylesheet" /> <!-- flexslider -->
+	<link href="../../static/assets/../../static/assets/libraries/magnific-popup.css" rel="stylesheet"/> <!-- Light Box -->
+    <link href="../../static/assets/../../static/assets/css/components.css" rel="stylesheet"/>
+	<link href="../../static/assets/../../static/assets/css/style.css" rel="stylesheet"/>
+    <link href="../../static/assets/../../static/assets/css/media.css" rel="stylesheet"/>
 
 
-    <script src="../../static/assets/js/html5/html5shiv.min.js"></script>
-    <script src="../../static/assets/js/html5/respond.min.js"></script>
+    <script src="../../static/assets/../../static/assets/js/html5/html5shiv.min.js"></script>
+    <script src="../../static/assets/../../static/assets/js/html5/respond.min.js"></script>
 
 
     <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -53,7 +53,7 @@ Purchase: https://themeforest.net/user/webstrot  -->
 	<!-- LOADER -->
 	<div id="site-loader" class="load-complete">
 		<div class="load-position">
-			<div class="logo"><img src="{% static 'assets/img/logo.png' %}" alt="logo"></div>
+			<div class="logo"><img src="{% static 'assets/../../static/assets/img/logo.png' %}" alt="logo"></div>
 			<h6>Please wait, loading...</h6>
 			<div class="loading">
 				<div class="loading-line"></div>
@@ -142,14 +142,14 @@ Purchase: https://themeforest.net/user/webstrot  -->
 						<div class="cart-dropdown">
 							<table>
 								<tr>
-									<td class="product-thumb"><a href="#"><img src="{% static 'assets/img/cart-hover-1.png' %}" alt="cart-hover" /></a></td>
+									<td class="product-thumb"><a href="#"><img src="{% static 'assets/../../static/assets/img/cart-hover-1.png' %}" alt="cart-hover" /></a></td>
 									<td><a title="Red Cotton Top" href="#">Red Cotton Top</a></td>
 									<td>x1</td>
 									<td>$92.00</td>
 									<td><a title="close" href="#"><i class="fa fa-close"></i></a></td>
 								</tr>
 								<tr>
-									<td class="product-thumb"><a href="#"><img src="{% static 'assets/img/cart-hover-2.png' %}" alt="cart-hover" /></a></td>
+									<td class="product-thumb"><a href="#"><img src="{% static 'assets/../../static/assets/img/cart-hover-2.png' %}" alt="cart-hover" /></a></td>
 									<td><a title="Red Cotton Top" href="#">Red Cotton Top</a></td>
 									<td>x1</td>
 									<td>$92.00</td>
@@ -176,7 +176,7 @@ Purchase: https://themeforest.net/user/webstrot  -->
 			<div class="container">
 				<nav class="navbar navbar-default navbar-static-top">
 					<div class="navbar-header">
-						<a href="{% url 'main' %}" class="logo"><img src="{% static 'assets/img/logo.png' %}" alt="logo"></a>
+						<a href="{% url 'main' %}" class="logo"><img src="{% static 'assets/../../static/assets/img/logo.png' %}" alt="logo"></a>
 						<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
 							<span class="sr-only">Toggle navigation</span>
 							<span class="icon-bar"></span>
@@ -191,7 +191,7 @@ Purchase: https://themeforest.net/user/webstrot  -->
 							<li class="dropdown">
 								<a title="Shop" href="#" class="dropdown-toggle" data-toggle="dropdown">Shop</a>
 								<ul class="dropdown-menu">
-									<li><a title="product" href="03_product.html">product</a></li>
+									<li><a title="product" href="{% url 'product' %}">product</a></li>
 									<li><a title="Single product" href="04_single_product.html">single product</a></li>
 									<li><a title="Single product" href="04_single_product-2.html">single product 2</a></li>
 									<li><a title="Shopping cart" href="06_shopping_cart.html">shopping cart</a></li>
@@ -211,17 +211,17 @@ Purchase: https://themeforest.net/user/webstrot  -->
 											<li id="mega-dropdown-slider" class="carousel slide mega-dropdown-slider" data-ride="carousel">
 											  <ul class="carousel-inner">
 												<li class="item active">
-													<a title="Product 1" href="#"><img src="{% static 'assets/img/mega-menu/new-collection.png' %}" class="img-responsive" alt="product 1"></a>
+													<a title="Product 1" href="#"><img src="{% static 'assets/../../static/assets/img/mega-menu/new-collection.png' %}" class="img-responsive" alt="product 1"></a>
 													<h4><small>Summer dress floral prints</small></h4>
 													<button class="btn btn-primary" type="button">49,99 €</button> <button  class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
 												</li><!-- End Item -->
 												<li class="item">
-													<a title="Product 2" href="#"><img src="{% static 'assets/img/mega-menu/new-collection-2.png' %}" class="img-responsive" alt="product 2"></a>
+													<a title="Product 2" href="#"><img src="{% static 'assets/../../static/assets/img/mega-menu/new-collection-2.png' %}" class="img-responsive" alt="product 2"></a>
 													<h4><small>Gold sandals with shiny touch</small></h4>
 													<button class="btn btn-primary" type="button">9,99 €</button> <button  class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
 												</li><!-- End Item -->
 												<li class="item">
-													<a title="Product 3" href="#"><img src="{% static 'assets/img/mega-menu/new-collection-3.png' %}" class="img-responsive" alt="product 3"></a>
+													<a title="Product 3" href="#"><img src="{% static 'assets/../../static/assets/img/mega-menu/new-collection-3.png' %}" class="img-responsive" alt="product 3"></a>
 													<h4><small>Denin jacket stamped</small></h4>
 													<button class="btn btn-primary" type="button">49,99 €</button> <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
 												</li><!-- End Item -->
@@ -311,7 +311,7 @@ Purchase: https://themeforest.net/user/webstrot  -->
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner" role="listbox">
 				<div class="item active">
-					<img src="{% static 'assets/img/slider/slide-1.jpg' %}" alt="slide-1">
+					<img src="{% static 'assets/../../static/assets/img/slider/slide-1.jpg' %}" alt="slide-1">
 					<div class="container">
 						<div class="slider-box">
 							<h3>Beauty &amp; Brain</h3>
@@ -322,7 +322,7 @@ Purchase: https://themeforest.net/user/webstrot  -->
 					</div>
 				</div>
 				<div class="item">
-					<img src="{% static 'assets/img/slider/slide-2.jpg' %}" alt="slide-1">
+					<img src="{% static 'assets/../../static/assets/img/slider/slide-2.jpg' %}" alt="slide-1">
 					<div class="container">
 						<div class="slider-box">
 							<h3>Beauty &amp; Brain</h3>
@@ -333,7 +333,7 @@ Purchase: https://themeforest.net/user/webstrot  -->
 					</div>
 				</div>
 				<div class="item">
-					<img src="{% static 'assets/img/slider/slide-3.jpg' %}" alt="slide-2">
+					<img src="{% static 'assets/../../static/assets/img/slider/slide-3.jpg' %}" alt="slide-2">
 					<div class="container">
 						<div class="slider-box">
 							<h3>Beauty &amp; Brain</h3>
@@ -380,7 +380,7 @@ Purchase: https://themeforest.net/user/webstrot  -->
 						<div class="category-box">
 							<span class="sale">+786</span>
 							<a title="Women’s Wear" href="./02_categories.html">
-								<img src="{% static 'assets/img/category/cat-img-1.jpg' %}" alt="cat-img" />
+								<img src="{% static 'assets/../../static/assets/img/category/cat-img-1.jpg' %}" alt="cat-img" />
 								<span>Women’s Wear</span>
 								<div class="cat-hover"></div>
 							</a>
@@ -389,7 +389,7 @@ Purchase: https://themeforest.net/user/webstrot  -->
 					<div class="item">
 						<div class="category-box">
 							<a title="Accessories" href="./02_categories.html">
-								<img src="{% static 'assets/img/category/cat-img-2.jpg' %}" alt="cat-img"/>
+								<img src="{% static 'assets/../../static/assets/img/category/cat-img-2.jpg' %}" alt="cat-img"/>
 								<span>Accessories </span>
 								<div class="cat-hover"></div>
 							</a>
@@ -399,7 +399,7 @@ Purchase: https://themeforest.net/user/webstrot  -->
 						<div class="category-box">
 							<span class="new">New</span>
 							<a title="Kids Wear" href="./02_categories.html">
-								<img src="{% static 'assets/img/category/cat-img-3.jpg' %}" alt="cat-img"/>
+								<img src="{% static 'assets/../../static/assets/img/category/cat-img-3.jpg' %}" alt="cat-img"/>
 								<span>Kids Wear</span>
 								<div class="cat-hover"></div>
 							</a>
@@ -408,7 +408,7 @@ Purchase: https://themeforest.net/user/webstrot  -->
 					<div class="item">
 						<div class="category-box">
 							<a title="Women Accessories" href="./02_categories.html">
-								<img src="{% static 'assets/img/category/cat-img-4.jpg' %}" alt="cat-img"/>
+								<img src="{% static 'assets/../../static/assets/img/category/cat-img-4.jpg' %}" alt="cat-img"/>
 								<span>Women Accessories</span>
 								<div class="cat-hover"></div>
 							</a>
@@ -418,7 +418,7 @@ Purchase: https://themeforest.net/user/webstrot  -->
 						<div class="category-box">
 							<span class="new">New</span>
 							<a title="Kids Wear" href="./02_categories.html">
-								<img src="{% static 'assets/img/category/cat-img-5.jpg' %}" alt="cat-img"/>
+								<img src="{% static 'assets/../../static/assets/img/category/cat-img-5.jpg' %}" alt="cat-img"/>
 								<span>Kids Wear</span>
 								<div class="cat-hover"></div>
 							</a>
@@ -427,7 +427,7 @@ Purchase: https://themeforest.net/user/webstrot  -->
 					<div class="item">
 						<div class="category-box">
 							<a title="Women Accessories" href="./02_categories.html">
-								<img src="{% static 'assets/img/category/cat-img-6.jpg' %}" alt="cat-img"/>
+								<img src="{% static 'assets/../../static/assets/img/category/cat-img-6.jpg' %}" alt="cat-img"/>
 								<span>Women Accessories</span>
 								<div class="cat-hover"></div>
 							</a>
@@ -453,10 +453,10 @@ Purchase: https://themeforest.net/user/webstrot  -->
 					<div class="category-box product-box">
 						<span class="sale">sales</span>
 						<div class="inner-product">
-							<img src="{% static 'assets/img/featured/featured-1.jpg' %}" alt="featured-img"/>
+							<img src="{% static 'assets/../../static/assets/img/featured/featured-1.jpg' %}" alt="featured-img"/>
 							<div class="product-box-inner">
 								<ul>
-									<li><a title="Eye" href="{% static 'assets/img/featured/featured-1.jpg' %}"><i class="fa fa-eye"></i></a></li>
+									<li><a title="Eye" href="{% static 'assets/../../static/assets/img/featured/featured-1.jpg' %}"><i class="fa fa-eye"></i></a></li>
 									<li><a title="Heart" href="#"><i class="fa fa-heart"></i></a></li>
 								</ul>
 								<a title="Add to cart" href="#" class="btn">add to cart</a>
@@ -478,10 +478,10 @@ Purchase: https://themeforest.net/user/webstrot  -->
 				<div class="col-md-3 col-sm-6 col-xs-6 main-product">
 					<div class="category-box product-box">
 						<div class="inner-product">
-							<img src="{% static 'assets/img/featured/featured-2.jpg' %}" alt="featured-img"/>
+							<img src="{% static 'assets/../../static/assets/img/featured/featured-2.jpg' %}" alt="featured-img"/>
 							<div class="product-box-inner">
 								<ul>
-									<li><a title="Eye" href="{% static 'assets/img/featured/featured-2.jpg' %}"><i class="fa fa-eye"></i></a></li>
+									<li><a title="Eye" href="{% static 'assets/../../static/assets/img/featured/featured-2.jpg' %}"><i class="fa fa-eye"></i></a></li>
 									<li><a title="Heart" href="#"><i class="fa fa-heart"></i></a></li>
 								</ul>
 								<a title="Add to cart" href="#" class="btn">add to cart</a>
@@ -504,10 +504,10 @@ Purchase: https://themeforest.net/user/webstrot  -->
 					<div class="category-box product-box">
 						<span class="sale">sales</span>
 						<div class="inner-product">
-							<img src="{% static 'assets/img/featured/featured-3.jpg' %}" alt="featured-img"/>
+							<img src="{% static 'assets/../../static/assets/img/featured/featured-3.jpg' %}" alt="featured-img"/>
 							<div class="product-box-inner">
 								<ul>
-									<li><a title="Eye" href="{% static 'assets/img/featured/featured-3.jpg' %}"><i class="fa fa-eye"></i></a></li>
+									<li><a title="Eye" href="{% static 'assets/../../static/assets/img/featured/featured-3.jpg' %}"><i class="fa fa-eye"></i></a></li>
 									<li><a title="Heart" href="#"><i class="fa fa-heart"></i></a></li>
 								</ul>
 								<a title="Add to cart" href="#" class="btn">add to cart</a>
@@ -529,10 +529,10 @@ Purchase: https://themeforest.net/user/webstrot  -->
 				<div class="col-md-3 col-sm-6 col-xs-6 main-product">
 					<div class="category-box product-box">
 						<div class="inner-product">
-							<img src="{% static 'assets/img/featured/featured-4.jpg' %}" alt="featured-img"/>
+							<img src="{% static 'assets/../../static/assets/img/featured/featured-4.jpg' %}" alt="featured-img"/>
 							<div class="product-box-inner">
 								<ul>
-									<li><a title="Eye" href="{% static 'assets/img/featured/featured-4.jpg' %}"><i class="fa fa-eye"></i></a></li>
+									<li><a title="Eye" href="{% static 'assets/../../static/assets/img/featured/featured-4.jpg' %}"><i class="fa fa-eye"></i></a></li>
 									<li><a title="Heart" href="#"><i class="fa fa-heart"></i></a></li>
 								</ul>
 								<a href="#" class="btn">add to cart</a>
@@ -557,10 +557,10 @@ Purchase: https://themeforest.net/user/webstrot  -->
 					<div class="category-box product-box">
 						<span class="sale">sales</span>
 						<div class="inner-product">
-							<img src="{% static 'assets/img/featured/featured-5.jpg' %}" alt="featured-img"/>
+							<img src="{% static 'assets/../../static/assets/img/featured/featured-5.jpg' %}" alt="featured-img"/>
 							<div class="product-box-inner">
 								<ul>
-									<li><a title="Eye" href="{% static 'assets/img/featured/featured-5.jpg' %}"><i class="fa fa-eye"></i></a></li>
+									<li><a title="Eye" href="{% static 'assets/../../static/assets/img/featured/featured-5.jpg' %}"><i class="fa fa-eye"></i></a></li>
 									<li><a title="Heart" href="#"><i class="fa fa-heart"></i></a></li>
 								</ul>
 								<a title="Add to cart" href="#" class="btn">add to cart</a>
@@ -582,10 +582,10 @@ Purchase: https://themeforest.net/user/webstrot  -->
 				<div class="col-md-3 col-sm-6 col-xs-6 main-product">
 					<div class="category-box product-box">
 						<div class="inner-product">
-							<img src="{% static 'assets/img/featured/featured-6.jpg' %}" alt="featured-img"/>
+							<img src="{% static 'assets/../../static/assets/img/featured/featured-6.jpg' %}" alt="featured-img"/>
 							<div class="product-box-inner">
 								<ul>
-									<li><a title="Eye" href="{% static 'assets/img/featured/featured-6.jpg' %}"><i class="fa fa-eye"></i></a></li>
+									<li><a title="Eye" href="{% static 'assets/../../static/assets/img/featured/featured-6.jpg' %}"><i class="fa fa-eye"></i></a></li>
 									<li><a title="Heart" href="#"><i class="fa fa-heart"></i></a></li>
 								</ul>
 								<a title="Add to cart" href="#" class="btn">add to cart</a>
@@ -608,10 +608,10 @@ Purchase: https://themeforest.net/user/webstrot  -->
 					<div class="category-box product-box">
 						<span class="sale">sales</span>
 						<div class="inner-product">
-							<img src="{% static 'assets/img/featured/featured-7.jpg' %}" alt="featured-img"/>
+							<img src="{% static 'assets/../../static/assets/img/featured/featured-7.jpg' %}" alt="featured-img"/>
 							<div class="product-box-inner">
 								<ul>
-									<li><a title="Eye" href="{% static 'assets/img/featured/featured-7.jpg' %}"><i class="fa fa-eye"></i></a></li>
+									<li><a title="Eye" href="{% static 'assets/../../static/assets/img/featured/featured-7.jpg' %}"><i class="fa fa-eye"></i></a></li>
 									<li><a title="Heart" href="#"><i class="fa fa-heart"></i></a></li>
 								</ul>
 								<a href="#" class="btn">add to cart</a>
@@ -633,10 +633,10 @@ Purchase: https://themeforest.net/user/webstrot  -->
 				<div class="col-md-3 col-sm-6 col-xs-6 main-product">
 					<div class="category-box product-box">
 						<div class="inner-product">
-							<img src="{% static 'assets/img/featured/featured-8.jpg' %}" alt="featured-img"/>
+							<img src="{% static 'assets/../../static/assets/img/featured/featured-8.jpg' %}" alt="featured-img"/>
 							<div class="product-box-inner">
 								<ul>
-									<li><a title="Eye" href="{% static 'assets/img/featured/featured-8.jpg' %}"><i class="fa fa-eye"></i></a></li>
+									<li><a title="Eye" href="{% static 'assets/../../static/assets/img/featured/featured-8.jpg' %}"><i class="fa fa-eye"></i></a></li>
 									<li><a title="Heart" href="#"><i class="fa fa-heart"></i></a></li>
 								</ul>
 								<a title="Add to cart" href="#" class="btn">add to cart</a>
@@ -671,9 +671,9 @@ Purchase: https://themeforest.net/user/webstrot  -->
 
 			<div class="col-md-3 col-sm-4">
 				<div class="badge-box">
-					<img src="{% static 'assets/img/blog/badge-img.jpg' %}" alt="offer img"/>
+					<img src="{% static 'assets/../../static/assets/img/blog/badge-img.jpg' %}" alt="offer img"/>
 					<div class="badge-icon">
-						<img src="{% static 'assets/img/blog/badge-icon.png' %}" alt="badge icon"/>
+						<img src="{% static 'assets/../../static/assets/img/blog/badge-icon.png' %}" alt="badge icon"/>
 					</div>
 				</div>
 			</div>
@@ -681,7 +681,7 @@ Purchase: https://themeforest.net/user/webstrot  -->
 			<div class="col-md-6 col-sm-4 blog-content">
 				<article>
 					<div class="col-md-4 col-sm-4 col-xs-4 ow-left-padding">
-						<a class="post-thumbnail"><img src="{% static 'assets/img/blog/post-thumbnail-1.jpg' %}" alt="post-thumbnail"/></a>
+						<a class="post-thumbnail"><img src="{% static 'assets/../../static/assets/img/blog/post-thumbnail-1.jpg' %}" alt="post-thumbnail"/></a>
 					</div>
 					<div class="col-md-8 col-sm-8 col-xs-8">
 						<header class="entry-header">
@@ -729,7 +729,7 @@ Purchase: https://themeforest.net/user/webstrot  -->
 
 				<article>
 					<div class="col-md-4 col-sm-4 col-xs-4 ow-left-padding">
-						<a class="post-thumbnail"><img src="{% static 'assets/img/blog/post-thumbnail-2.jpg' %}" alt="post-thumbnail"/></a>
+						<a class="post-thumbnail"><img src="{% static 'assets/../../static/assets/img/blog/post-thumbnail-2.jpg' %}" alt="post-thumbnail"/></a>
 					</div>
 					<div class="col-md-8 col-sm-8 col-xs-8">
 						<header class="entry-header">
@@ -779,7 +779,7 @@ Purchase: https://themeforest.net/user/webstrot  -->
 
 			<div class="col-md-3 col-sm-4">
 				<div class="badge-box">
-					<img src="{% static 'assets/img/blog/badge-img-2.jpg' %}" alt="offer img"/>
+					<img src="{% static 'assets/../../static/assets/img/blog/badge-img-2.jpg' %}" alt="offer img"/>
 					<div class="middle-add">
 						<h3>Take a walk on the wild side</h3>
 						<a title="Read More" href="#" class="read-more">Read More</a>
@@ -796,7 +796,7 @@ Purchase: https://themeforest.net/user/webstrot  -->
 		<div id="add-banner-section" class="add-banner-section bottom-shadow">
 			<!-- container -->
 			<div class="container">
-				<a title="Add-banner" href="#"><img src="{% static 'assets/img/add-banner-2.jpg' %}" alt="add-banner"/></a>
+				<a title="Add-banner" href="#"><img src="{% static 'assets/../../static/assets/img/add-banner-2.jpg' %}" alt="add-banner"/></a>
 			</div><!-- container /- -->
 		</div><!-- Add Banner /- -->
 
@@ -813,32 +813,32 @@ Purchase: https://themeforest.net/user/webstrot  -->
 				<div id="our-partner" class="owl-carousel owl-theme our-partner">
 					<div class="item">
 						<a title="Partner" href="#" class="partner-box">
-							<img src="{% static 'assets/img/partner/partner-1.png' %}" alt="partner-1"/>
+							<img src="{% static 'assets/../../static/assets/img/partner/partner-1.png' %}" alt="partner-1"/>
 						</a>
 					</div>
 					<div class="item">
 						<a title="Partner" href="#" class="partner-box">
-							<img src="{% static 'assets/img/partner/partner-2.png' %}" alt="partner-1"/>
+							<img src="{% static 'assets/../../static/assets/img/partner/partner-2.png' %}" alt="partner-1"/>
 						</a>
 					</div>
 					<div class="item">
 						<a title="Partner" href="#" class="partner-box">
-							<img src="{% static 'assets/img/partner/partner-3.png' %}" alt="partner-1"/>
+							<img src="{% static 'assets/../../static/assets/img/partner/partner-3.png' %}" alt="partner-1"/>
 						</a>
 					</div>
 					<div class="item">
 						<a title="Partner" href="#" class="partner-box">
-							<img src="{% static 'assets/img/partner/partner-4.png' %}" alt="partner-1"/>
+							<img src="{% static 'assets/../../static/assets/img/partner/partner-4.png' %}" alt="partner-1"/>
 						</a>
 					</div>
 					<div class="item">
 						<a title="Partner" href="#" class="partner-box">
-							<img src="{% static 'assets/img/partner/partner-1.png' %}" alt="partner-1"/>
+							<img src="{% static 'assets/../../static/assets/img/partner/partner-1.png' %}" alt="partner-1"/>
 						</a>
 					</div>
 					<div class="item">
 						<a title="Partner" href="#" class="partner-box">
-							<img src="{% static 'assets/img/partner/partner-2.png' %}" alt="partner-1"/>
+							<img src="{% static 'assets/../../static/assets/img/partner/partner-2.png' %}" alt="partner-1"/>
 						</a>
 					</div>
 				</div><!-- Owl Carousel /- -->
@@ -999,14 +999,14 @@ Purchase: https://themeforest.net/user/webstrot  -->
 						<button type="submit" value="like" class="btn btn-default pull-right">Like <i class="fa fa-thumbs-o-up"></i> </button>
 					</div>
 					<ul>
-						<li><a  title="Facebook photo" href="#"><img src="{% static 'assets/img/footer/fb-1.jpg' %}" alt="facebook-photo"/></a></li>
-						<li><a  title="Facebook photo" href="#"><img src="{% static 'assets/img/footer/fb-2.jpg' %}" alt="facebook-photot"/></a></li>
-						<li><a  title="Facebook photo" href="#"><img src="{% static 'assets/img/footer/fb-3.jpg' %}" alt="facebook-photo"/></a></li>
-						<li><a  title="Facebook photo" href="#"><img src="{% static 'assets/img/footer/fb-4.jpg' %}" alt="facebook-photo"/></a></li>
-						<li><a  title="Facebook photo" href="#"><img src="{% static 'assets/img/footer/fb-5.jpg' %}" alt="facebook-photo"/></a></li>
-						<li><a  title="Facebook photo" href="#"><img src="{% static 'assets/img/footer/fb-6.jpg' %}" alt="facebook-photo"/></a></li>
-						<li><a  title="Facebook photo" href="#"><img src="{% static 'assets/img/footer/fb-7.jpg' %}" alt="facebook-photo"/></a></li>
-						<li><a  title="Facebook photo" href="#"><img src="{% static 'assets/img/footer/fb-8.jpg' %}" alt="facebook-photo"/></a></li>
+						<li><a  title="Facebook photo" href="#"><img src="{% static 'assets/../../static/assets/img/footer/fb-1.jpg' %}" alt="facebook-photo"/></a></li>
+						<li><a  title="Facebook photo" href="#"><img src="{% static 'assets/../../static/assets/img/footer/fb-2.jpg' %}" alt="facebook-photot"/></a></li>
+						<li><a  title="Facebook photo" href="#"><img src="{% static 'assets/../../static/assets/img/footer/fb-3.jpg' %}" alt="facebook-photo"/></a></li>
+						<li><a  title="Facebook photo" href="#"><img src="{% static 'assets/../../static/assets/img/footer/fb-4.jpg' %}" alt="facebook-photo"/></a></li>
+						<li><a  title="Facebook photo" href="#"><img src="{% static 'assets/../../static/assets/img/footer/fb-5.jpg' %}" alt="facebook-photo"/></a></li>
+						<li><a  title="Facebook photo" href="#"><img src="{% static 'assets/../../static/assets/img/footer/fb-6.jpg' %}" alt="facebook-photo"/></a></li>
+						<li><a  title="Facebook photo" href="#"><img src="{% static 'assets/../../static/assets/img/footer/fb-7.jpg' %}" alt="facebook-photo"/></a></li>
+						<li><a  title="Facebook photo" href="#"><img src="{% static 'assets/../../static/assets/img/footer/fb-8.jpg' %}" alt="facebook-photo"/></a></li>
 					</ul>
 					<a href="#"> facebook page </a>
 				</aside>
@@ -1028,7 +1028,7 @@ Purchase: https://themeforest.net/user/webstrot  -->
 					<p> WebStrot&copy; 2015 Luxury Shop - HTML Template. </p>
 				</div>
 				<div class="col-md-3 col-sm-3">
-					<a title="Payment-getway" href="#"><img src="{% static 'assets/img/footer/payment-getway-icon.png' %}" alt="payment-getway-icon"></a>
+					<a title="Payment-getway" href="#"><img src="{% static 'assets/../../static/assets/img/footer/payment-getway-icon.png' %}" alt="payment-getway-icon"></a>
 				</div>
 			</div><!-- container /- -->
 			<a title="Back-to-top" id="back-to-top" href="#back-to-top" class="back-to-top"><i class="fa fa-caret-up"></i></a>
@@ -1043,20 +1043,20 @@ Purchase: https://themeforest.net/user/webstrot  -->
 
 {% block js %}
 	<!-- jQuery Include -->
-	<script src="../../static/assets/libraries/jquery.min.js"></script>
+	<script src="../../static/assets/../../static/assets/libraries/jquery.min.js"></script>
 	<script type="text/javascript" src='https://maps.google.com/maps/api/js?sensor=false'></script>
-	<script src="../../static/assets/libraries/gmap/jquery.gmap.min.js"></script> <!-- Light Box -->
-	<script src="../../static/assets/libraries/jquery.easing.min.js"></script><!-- Easing Animation Effect -->
-	<script src="../../static/assets/libraries/bootstrap/bootstrap.min.js"></script> <!-- Core Bootstrap v3.3.4 -->
-	<script src="../../static/assets/libraries/fuelux/jquery-ui.min.js"></script>
-	<script src="../../static/assets/libraries/jquery.animateNumber.min.js"></script> <!-- Used for Animated Numbers -->
-	<script src="../../static/assets/libraries/jquery.appear.js"></script> <!-- It Loads jQuery when element is appears -->
-	<script src="../../static/assets/libraries/jquery.knob.js"></script> <!-- Used for Loading Circle -->
-	<script src="../../static/assets/libraries/wow.min.js"></script> <!-- Use For Animation -->
-	<script src="../../static/assets/libraries/owl-carousel/owl.carousel.min.js"></script> <!-- Core Owl Carousel CSS File  *	v1.3.3 -->
-	<script src="../../static/assets/libraries/expanding-search/modernizr.custom.js"></script> <!-- Core Owl Carousel CSS File  *	v1.3.3 -->
-	<script src="../../static/assets/libraries/flexslider/jquery.flexslider-min.js"></script> <!-- flexslider -->
-	<script src="../../static/assets/libraries/jquery.magnific-popup.min.js"></script> <!-- Light Box -->
+	<script src="../../static/assets/../../static/assets/libraries/gmap/jquery.gmap.min.js"></script> <!-- Light Box -->
+	<script src="../../static/assets/../../static/assets/libraries/jquery.easing.min.js"></script><!-- Easing Animation Effect -->
+	<script src="../../static/assets/../../static/assets/libraries/bootstrap/bootstrap.min.js"></script> <!-- Core Bootstrap v3.3.4 -->
+	<script src="../../static/assets/../../static/assets/libraries/fuelux/jquery-ui.min.js"></script>
+	<script src="../../static/assets/../../static/assets/libraries/jquery.animateNumber.min.js"></script> <!-- Used for Animated Numbers -->
+	<script src="../../static/assets/../../static/assets/libraries/jquery.appear.js"></script> <!-- It Loads jQuery when element is appears -->
+	<script src="../../static/assets/../../static/assets/libraries/jquery.knob.js"></script> <!-- Used for Loading Circle -->
+	<script src="../../static/assets/../../static/assets/libraries/wow.min.js"></script> <!-- Use For Animation -->
+	<script src="../../static/assets/../../static/assets/libraries/owl-carousel/owl.carousel.min.js"></script> <!-- Core Owl Carousel CSS File  *	v1.3.3 -->
+	<script src="../../static/assets/../../static/assets/libraries/expanding-search/modernizr.custom.js"></script> <!-- Core Owl Carousel CSS File  *	v1.3.3 -->
+	<script src="../../static/assets/../../static/assets/libraries/flexslider/jquery.flexslider-min.js"></script> <!-- flexslider -->
+	<script src="../../static/assets/../../static/assets/libraries/jquery.magnific-popup.min.js"></script> <!-- Light Box -->
 	<!-- Customized Scripts -->
 	<script src="../../static/assets/js/functions.js"></script>
 {% endblock js %}

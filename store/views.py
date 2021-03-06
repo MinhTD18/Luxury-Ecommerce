@@ -59,6 +59,26 @@ def logout(request):
     return redirect('main')
 
 
+def shipping_address(request):
+    return render(request, 'store/08_Shipping_Address.html')
+
+
+def payment(request):
+    return render(request, 'store/09_payment.html')
+
+
+def summary(request):
+    return render(request, 'store/10_summary.html')
+
+
+def finish(request):
+    return render(request, 'store/11_finish.html')
+
+
+def product(request):
+    return render(request, 'store/03_product.html')
+
+
 class CustomPasswordResetView(PasswordResetView):
     subject_template_name = 'store/registration/password_reset_subject.txt'
     email_template_name = 'store/registration/password_reset_email.html'

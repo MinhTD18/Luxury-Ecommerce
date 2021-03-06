@@ -1,4 +1,4 @@
-git # ECOMERCE
+git # ECOMMERCE
 
 ### Github
 - clone source code
@@ -17,6 +17,4 @@ you checkout a new brach, it will create a new branch and switch to that branch
 >> git push #push your code to branch
 ```
 
-
-#### git https: https://github.com/MinhTD18/Training_Project_Ecomerce.git
 

@@ -499,62 +499,62 @@
 		
 		$("#default").on("click",function()
 		{
-			$("#color").attr("href", "css/color-schemes/default.css");
+			$("#color").attr("href", "../../static/assets/css/color-schemes/default.css");
 			return false;
 		});
 		
 		$("#cyan").on("click",function()
 		{
-			$("#color").attr("href", "css/color-schemes/cyan.css");
+			$("#color").attr("href", "../../static/assets/css/color-schemes/cyan.css");
 			return false;
 		});
 		
 		$("#dark-blue").on("click",function()
 		{
-			$("#color").attr("href", "css/color-schemes/dark-blue.css");
+			$("#color").attr("href", "../../static/assets/css/color-schemes/dark-blue.css");
 			return false;
 		});
 		
 		$("#green").on("click",function()
 		{
-			$("#color").attr("href", "css/color-schemes/green.css");
+			$("#color").attr("href", "../../static/assets/css/color-schemes/green.css");
 			return false;
 		});
 		
 		$("#red").on("click",function()
 		{
-			$("#color").attr("href", "css/color-schemes/red.css");
+			$("#color").attr("href", "../../static/assets/css/color-schemes/red.css");
 			return false;
 		});
 		
 		$("#yellow").on("click",function()
 		{
-			$("#color").attr("href", "css/color-schemes/yellow.css");
+			$("#color").attr("href", "../../static/assets/css/color-schemes/yellow.css");
 			return false;
 		});
 
 		$("#light-green").on("click",function()
 		{
-			$("#color").attr("href", "css/color-schemes/light-green.css");
+			$("#color").attr("href", "../../static/assets/css/color-schemes/light-green.css");
 			$('.dial').trigger('configure',{"fgColor":"#64E294"});
 			return false;
 		});
 
 		$("#orange").on("click",function()
 		{
-			$("#color").attr("href", "css/color-schemes/orange.css");
+			$("#color").attr("href", "../../static/assets/css/color-schemes/orange.css");
 			return false;
 		});
 
 		$("#pink").on("click",function()
 		{
-			$("#color").attr("href", "css/color-schemes/pink.css");
+			$("#color").attr("href", "../../static/assets/css/color-schemes/pink.css");
 			return false;
 		});
 
 		$("#black").on("click",function()
 		{
-			$("#color").attr("href", "css/color-schemes/black.css");
+			$("#color").attr("href", "../../static/assets/css/color-schemes/black.css");
 			return false;
 		});
 
@@ -574,7 +574,7 @@
 					latitude: 47.670553,
 					longitude: 9.588479,
 					icon: {
-						image: "images/map-marker.png",
+						image: "../../static/assets/img/map-marker.png",
 						iconsize: [26, 46],
 						iconanchor: [12,46]
 					}
@@ -587,14 +587,14 @@
 					latitude: 47.594996,
 					longitude: 9.600708,
 					icon: {
-						image: "images/map-marker.png",
+						image: "../../static/assets/img/map-marker.png",
 						iconsize: [26, 46],
 						iconanchor: [12,46]
 					}
 				}
 			],
 			icon: {
-				image: "images/map-marker.png", 
+				image: "../../static/assets/img/map-marker.png",
 				iconsize: [26, 46],
 				iconanchor: [12, 46]
 			},
