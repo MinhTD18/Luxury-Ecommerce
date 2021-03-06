@@ -111,6 +111,14 @@ def shopping_cart(request):
     return render(request, 'store/06_shopping_cart.html')
 
 
+def single_product_1(request):
+    return render(request, 'store/04_single_product.html')
+
+
+def single_product_2(request):
+    return render(request, 'store/04_single_product-2.html')
+
+
 class CustomPasswordResetView(PasswordResetView):
     subject_template_name = 'store/registration/password_reset_subject.txt'
     email_template_name = 'store/registration/password_reset_email.html'
