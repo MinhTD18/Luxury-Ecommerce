@@ -20,6 +20,7 @@ urlpatterns = [
     path('shopping_cart/', views.shopping_cart, name='shopping_cart'),
     path('404/', views.handle404, name='404'),
     path('contact/', views.contact, name='contact'),
+    path('single_blog_post/', views.single_blog_post, name='single_blog_post'),
     path('blog/', views.blog, name='blog'),
     path('short_code/', views.short_code, name='short_code'),
     path('about/', views.about, name='about'),

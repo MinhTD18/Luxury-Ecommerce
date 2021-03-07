@@ -88,6 +88,10 @@ def contact(request):
 
 
 def blog(request):
+    return render(request, 'store/12_blog.html')
+
+
+def single_blog_post(request):
     return render(request, 'store/13_single-blog-post.html')
 
 
