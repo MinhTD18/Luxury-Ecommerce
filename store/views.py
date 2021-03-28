@@ -2,12 +2,11 @@ from django.contrib.auth.views import *
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User, auth
 from django.contrib import messages
+from store.models import Product
 # from django.contrib.auth.forms import PasswordResetForm
 # from django.contrib.auth.tokens import default_token_generator
 #
 # from store.forms import UserForgotPasswordForm
-
-
 def main(request):
     context = {}
     return render(request, 'store/index.html', context)
@@ -21,7 +20,7 @@ def login(request):
         user = auth.authenticate(username=username, password=password)
         if user is not None:
             auth.login(request, user)
-            return redirect('main')
+            return redirect('shipping_address')
         else:
             messages.info(request, 'Email or Password is not correct')
             return redirect('login')
