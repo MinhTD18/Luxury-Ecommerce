@@ -1,0 +1,10 @@
+version: "3.3"
+
+services:
+  luxury_ecommerce:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8001
+    volumes:
+      - .:/source_code
+    ports:
+      - "8001:8001"
