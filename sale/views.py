@@ -1,7 +1,4 @@
-from django.contrib.auth.views import PasswordResetDoneView, PasswordResetConfirmView, PasswordResetCompleteView, \
-    PasswordChangeView, PasswordChangeDoneView
-from django.views.generic.base import View
-
+from django.contrib.auth.views import *
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User, auth
 from django.contrib import messages
@@ -20,7 +17,7 @@ def login(request):
         user = auth.authenticate(username=username, password=password)
         if user is not None:
             auth.login(request, user)
-            return redirect('main')
+            return redirect('shipping_address')
         else:
             messages.info(request, 'Email or Password is not correct')
             return redirect('login')
@@ -51,6 +48,81 @@ def register(request):
         return redirect('/')
 
     return render(request, 'store/05_register.html')
+
+
+def logout(request):
+    auth.logout(request)
+    return redirect('main')
+
+
+def shipping_address(request):
+    return render(request, 'store/08_Shipping_Address.html')
+
+
+def payment(request):
+    return render(request, 'store/09_payment.html')
+
+
+def summary(request):
+    return render(request, 'store/10_summary.html')
+
+
+def finish(request):
+    return render(request, 'store/11_finish.html')
+
+
+def product(request):
+    return render(request, 'store/03_product.html')
+
+
+def handle404(request):
+    return render(request, 'store/404.html')
+
+
+def contact(request):
+    return render(request, 'store/14_contact.html')
+
+
+def blog(request):
+    return render(request, 'store/12_blog.html')
+
+
+def single_blog_post(request):
+    return render(request, 'store/13_single-blog-post.html')
+
+
+def short_code(request):
+    return render(request, 'store/shortcodes.html')
+
+
+def about(request):
+    return render(request, 'store/about.html')
+
+
+def look_book(request):
+    return render(request, 'store/look-book.html')
+
+
+def categories(request):
+    return render(request, 'store/02_categories.html')
+
+
+def shopping_cart(request):
+    return render(request, 'store/06_shopping_cart.html')
+
+
+def single_product_1(request):
+    return render(request, 'store/04_single_product.html')
+
+
+def single_product_2(request):
+    return render(request, 'store/04_single_product-2.html')
+
+
+class CustomPasswordResetView(PasswordResetView):
+    subject_template_name = 'store/registration/password_reset_subject.txt'
+    email_template_name = 'store/registration/password_reset_email.html'
+    template_name = 'store/registration/password_reset_form.html'
 
 
 class CustomPasswordResetViewDone(PasswordResetDoneView):
