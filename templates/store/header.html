@@ -18,7 +18,7 @@
                 </ul>
                 <ul class="top-menu">
                     {% if user.is_authenticated %}
-                        <li><a title="Welcome, {{ user.username }}" href="#">Welcome, {{ user.username }}</a></li>
+                        <li><a title="Welcome, {{ user.username }}" href="{% url 'shipping_address' %}">Welcome, {{ user.username }}</a></li>
                         <li><a title="Logout" href="{% url 'logout' %}">Logout</a></li>
                     {% else %}
                         <li><a title="Login" href="{% url 'login' %}">Login</a></li>
