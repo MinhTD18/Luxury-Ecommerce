@@ -6,6 +6,7 @@ def product_upload_path(instance, filename):
     return 'store/media/product_{0}_{1}'.format(instance.id, filename)
 
 
+
 class TimeStampMixin(models.Model):
     """
     An abstract base class model that provides self-updating
